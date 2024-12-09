@@ -2,7 +2,7 @@
 import random
 def get_choices():
     player_choice =input("choose Rock, Paper and Sissors:")
-    options = [ "rock", "paper", "sissors" ] 
+    options = [ "rock", "paper", "scissors" ] 
     computer_choice = random.choice(options)
     choices={"player": player_choice, "computer": computer_choice}
     return choices
@@ -16,19 +16,19 @@ def check_win(player, computer):
         if computer == "paper":
                 return "Hah you lost, you couldn't even win against a computer loser!"
         else:
-             return "You won!,But how much loner you are to play stone paper sissors with a computer ,SAD bro."
+             return "You won!,But how much loner you are to play stone paper scissors with a computer ,SAD bro."
 
-    elif player == "sissors":
+    elif player == "scissors":
         if computer == "rock":
                 return "Hah you lost, you couldn't even win against a computer loser!"
         else:
-             return "You won!,But how much loner you are to play stone paper sissors with a computer ,SAD bro."
+             return "You won!,But how much loner you are to play stone paper scissors with a computer ,SAD bro."
 
     elif player == "paper":
-        if computer == "sissors":
+        if computer == "sicssors":
                 return "Hah you lost, you couldn't even win against a computer loser!"
         else:
-             return "You won!,But how much loner you are to play stone paper sissors with a computer ,SAD bro."
+             return "You won!,But how much loner you are to play stone paper scissors with a computer ,SAD bro."
 
     else:
          print("can't type properly or what? loser...")
